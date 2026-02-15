@@ -697,6 +697,7 @@ section {
   font-size: 3.5rem;
   font-weight: 800;
   color: var(--accent-cyan);
+  font-variant-numeric: tabular-nums;
   line-height: 1;
   margin-bottom: var(--space-sm);
 }
@@ -1315,6 +1316,7 @@ section {
   font-family: var(--font-display);
   font-size: 1.5rem;
   font-weight: 800;
+  font-variant-numeric: tabular-nums;
   color: var(--accent-cyan);
   position: relative;
   z-index: 2;
@@ -1432,6 +1434,7 @@ section {
   color: var(--accent-cyan);
   font-size: 0.75rem;
   font-weight: 700;
+  font-variant-numeric: tabular-nums;
   padding: 4px 10px;
   border-radius: var(--radius-sm);
 }
@@ -1500,13 +1503,11 @@ section {
   width: min(640px, 90vw);
   height: auto;
   opacity: 0.62;
-  filter: brightness(0.8) saturate(0.9);
-  transition: opacity var(--transition-base), filter var(--transition-base);
+  transition: opacity var(--transition-base);
 }
 
 .partner .partner-link:hover .partner-logo {
   opacity: 1;
-  filter: brightness(1) saturate(1);
 }
 
 .partner .partner-caption {
