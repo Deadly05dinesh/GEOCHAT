@@ -1471,25 +1471,30 @@ section {
    PARTNER
    ============================================ */
 .partner {
-  padding: 60px 0;
+  padding: 88px 0 110px;
   background: var(--surface-dark);
   text-align: center;
 }
 
+.partner .section-label {
+  display: block;
+  margin-bottom: 26px;
+}
+
 .partner .partner-badge {
-  margin-top: 24px;
+  margin-top: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 14px;
+  gap: 20px;
 }
 
 .partner .partner-link {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 14px 18px;
-  border-radius: 14px;
+  padding: 20px 28px;
+  border-radius: 18px;
   background: #ffffff;
   border: 1px solid rgba(255, 255, 255, 0.18);
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
@@ -1498,7 +1503,8 @@ section {
 
 .partner .partner-logo {
   display: block;
-  width: min(460px, 84vw);
+  width: min(760px, 94vw);
+  max-width: 100%;
   height: auto;
 }
 
@@ -1510,9 +1516,9 @@ section {
 .partner .partner-caption {
   margin: 0;
   font-family: var(--font-display);
-  font-size: 1.02rem;
+  font-size: 1.1rem;
   color: var(--text-gray);
-  letter-spacing: 0.03em;
+  letter-spacing: 0.04em;
 }
 
 /* ============================================
@@ -2299,6 +2305,24 @@ section {
 
   .section-label {
     font-size: 0.7rem;
+  }
+
+  .partner {
+    padding: 70px 0 80px;
+  }
+
+  .partner .partner-link {
+    padding: 12px 14px;
+    border-radius: 12px;
+  }
+
+  .partner .partner-logo {
+    width: min(540px, 94vw);
+  }
+
+  .partner .partner-caption {
+    font-size: 0.95rem;
+    letter-spacing: 0.03em;
   }
 
   .hero {
