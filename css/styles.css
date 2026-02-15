@@ -1493,7 +1493,6 @@ section {
   background: transparent;
   border: 0;
   box-shadow: none;
-  transition: transform var(--transition-base), box-shadow var(--transition-base), border-color var(--transition-base);
 }
 
 .partner .partner-logo {
@@ -1503,11 +1502,6 @@ section {
   opacity: 0.62;
   filter: brightness(0.8) saturate(0.9);
   transition: opacity var(--transition-base), filter var(--transition-base);
-}
-
-.partner .partner-link:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 0 24px rgba(0, 217, 255, 0.24);
 }
 
 .partner .partner-link:hover .partner-logo {
