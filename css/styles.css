@@ -1471,54 +1471,49 @@ section {
    PARTNER
    ============================================ */
 .partner {
-  padding: 88px 0 110px;
+  padding: 60px 0;
   background: var(--surface-dark);
   text-align: center;
 }
 
-.partner .section-label {
-  display: block;
-  margin-bottom: 26px;
-}
-
 .partner .partner-badge {
-  margin-top: 0;
+  margin-top: 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 14px;
 }
 
 .partner .partner-link {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 20px 28px;
-  border-radius: 18px;
+  padding: 14px 18px;
+  border-radius: 14px;
   background: #ffffff;
   border: 1px solid rgba(255, 255, 255, 0.18);
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
-  transition: transform var(--transition-base), box-shadow var(--transition-base);
+  transition: transform var(--transition-base), box-shadow var(--transition-base), border-color var(--transition-base);
 }
 
 .partner .partner-logo {
   display: block;
-  width: min(760px, 94vw);
-  max-width: 100%;
+  width: min(640px, 90vw);
   height: auto;
 }
 
 .partner .partner-link:hover {
   transform: translateY(-2px);
-  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.32);
+  border-color: rgba(0, 217, 255, 0.6);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.32), 0 0 24px rgba(0, 217, 255, 0.24);
 }
 
 .partner .partner-caption {
   margin: 0;
   font-family: var(--font-display);
-  font-size: 1.1rem;
+  font-size: 1.02rem;
   color: var(--text-gray);
-  letter-spacing: 0.04em;
+  letter-spacing: 0.03em;
 }
 
 /* ============================================
@@ -2305,24 +2300,6 @@ section {
 
   .section-label {
     font-size: 0.7rem;
-  }
-
-  .partner {
-    padding: 70px 0 80px;
-  }
-
-  .partner .partner-link {
-    padding: 12px 14px;
-    border-radius: 12px;
-  }
-
-  .partner .partner-logo {
-    width: min(540px, 94vw);
-  }
-
-  .partner .partner-caption {
-    font-size: 0.95rem;
-    letter-spacing: 0.03em;
   }
 
   .hero {
