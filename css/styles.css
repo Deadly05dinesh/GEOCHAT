@@ -1488,11 +1488,11 @@ section {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 14px 18px;
-  border-radius: 14px;
-  background: #ffffff;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+  padding: 0;
+  border-radius: 0;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
   transition: transform var(--transition-base), box-shadow var(--transition-base), border-color var(--transition-base);
 }
 
@@ -1507,8 +1507,7 @@ section {
 
 .partner .partner-link:hover {
   transform: translateY(-2px);
-  border-color: rgba(0, 217, 255, 0.6);
-  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.32), 0 0 24px rgba(0, 217, 255, 0.24);
+  box-shadow: 0 0 24px rgba(0, 217, 255, 0.24);
 }
 
 .partner .partner-link:hover .partner-logo {
