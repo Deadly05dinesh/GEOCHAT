@@ -25,6 +25,9 @@ document.addEventListener('DOMContentLoaded', () => {
   // ── Smooth scroll with offset for fixed navbar ──
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', (e) => {
+      // Industry "Learn more" links open the modal via card click handling.
+      if (anchor.classList.contains('card-link')) return;
+
       const targetId = anchor.getAttribute('href');
       if (targetId === '#') return;
       const target = document.querySelector(targetId);
