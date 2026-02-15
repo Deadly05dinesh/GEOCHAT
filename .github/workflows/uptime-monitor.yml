@@ -1,0 +1,35 @@
+name: Website Uptime Monitor
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  uptime-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check GEOCHAT website uptime
+        env:
+          SITE_URL: https://deadly05dinesh.github.io/GEOCHAT/
+          EXPECTED_TEXT: GEOCHAT Solutions LLP
+        run: |
+          set -euo pipefail
+
+          status_code="$(curl -L -sS -o /tmp/site.html -w "%{http_code}" "$SITE_URL")"
+          echo "HTTP status code: $status_code"
+
+          if [ "$status_code" -lt 200 ] || [ "$status_code" -ge 400 ]; then
+            echo "Website health check failed: HTTP $status_code"
+            exit 1
+          fi
+
+          if ! grep -qi "$EXPECTED_TEXT" /tmp/site.html; then
+            echo "Website health check failed: expected content not found"
+            exit 1
+          fi
+
+          echo "Website health check passed."
