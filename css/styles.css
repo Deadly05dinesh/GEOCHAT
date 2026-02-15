@@ -1488,14 +1488,9 @@ section {
 }
 
 .partner .partner-link {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-  border-radius: 0;
-  background: transparent;
-  border: 0;
-  box-shadow: none;
+  display: inline-block;
+  line-height: 0;
+  pointer-events: none;
 }
 
 .partner .partner-logo {
@@ -1503,10 +1498,11 @@ section {
   width: min(640px, 90vw);
   height: auto;
   opacity: 0.62;
+  pointer-events: auto;
   transition: opacity var(--transition-base);
 }
 
-.partner .partner-link:hover .partner-logo {
+.partner .partner-logo:hover {
   opacity: 1;
 }
 
